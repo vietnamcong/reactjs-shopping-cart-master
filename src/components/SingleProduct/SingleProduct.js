@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { useParams } from 'react-router-dom';
-
-
-function withParams(Component) {
-    return props => <Component {...props} params={useParams()} />;
-}
 
 class SingleProduct extends Component {
     
     render() {
+        console.log('this.props' , this.props);
         
         const { isInCart ,product } = this.props;
         const { name, price, currency, image } = product; 
@@ -36,4 +31,4 @@ SingleProduct.propTypes = {
     removeFromCart: PropTypes.func.isRequired,
 }
 
-export default withParams(SingleProduct);
+export default SingleProduct;

@@ -9,7 +9,7 @@ export function getProducts(state, props) {
 }
 
 export function getProduct(state, props) {
-    return state.products.find(item => item.id === parseInt(props?.params?.id));
+    return state.products.find(item => item.id === parseInt(props?.id));
 }
 
 export function getProductByCategory(state, props) {

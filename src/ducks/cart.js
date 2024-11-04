@@ -7,7 +7,7 @@ const CART_REMOVE = 'cart/REMOVE';
 // reducer
 const initialState = {
     items: [], // array of product ids
-    currency: 'VNĐ'
+    currency: 'VND'
 };
 
 export default function cart(state = initialState, action = {}) {
@@ -60,6 +60,8 @@ export function isInCart(state, props) {
 }
 
 export function getItems(state, props) {
+    console.log(state);
+    
     return state.cart.items.map(id => getProduct(state, { id }));
 }
 

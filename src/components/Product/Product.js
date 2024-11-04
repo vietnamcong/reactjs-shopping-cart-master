@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Product extends Component {
     handleClick = () => {
         const { id, addToCart, removeFromCart, isInCart } = this.props;
-
+        
         if (isInCart) {
             removeFromCart(id);
         } else {

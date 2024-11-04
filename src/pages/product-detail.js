@@ -10,7 +10,7 @@ const ProductDetail = () => {
                 <img src="/images/slide/slide-1.jpg" className="img-responsive" alt="Bird" />
             </div>
             <div className="container">
-                <SingleProduct params={useParams()} />
+                <SingleProduct id={useParams().id} />
                 <div className="row">
                     <div className="col-12 col-md-8">
                     
