@@ -1,0 +1,24 @@
+.category-list {
+    display: flex;
+}
+.category-list ul{
+   display: flex;
+   list-style: none;
+}
+.category-list ul li{
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border: solid 1px #ccc;
+    margin: 10px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+    .category-list{
+        width: 100%;
+    }
+    .category-list ul li{
+        width: auto;
+    }
+}

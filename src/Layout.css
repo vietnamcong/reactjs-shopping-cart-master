@@ -1,0 +1,24 @@
+.form-search{
+    height: 50px;
+    display: flex;
+}
+.form-search .form-inline{
+    margin: auto auto;
+}
+@media only screen and (max-width: 768px) {
+    .navbar-default .container .row{
+        display: flex;
+    }
+    .navbar-default .container .row .link {
+        width: 33%;
+        overflow: hidden;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .d-none{
+        display: none !important;
+    }
+}
+.txt-right{
+    text-align: right;
+}
